@@ -1,0 +1,25 @@
+$fontColor: green;
+@mixin textFormate{
+    padding: 20px;
+    margin: 10px;
+    background-color: burlywood;
+    text-align: center;
+    font-size: 15px;
+
+    border-radius: 20px;
+}
+h3{
+    color: $fontColor;
+}
+button{
+    @include textFormate()
+}
+
+// functions
+// @function sqr($num) {
+//     @return #{$num * $num}px;
+//   }
+  
+// h3 {
+//     font-size: sqr(7);
+//   }
